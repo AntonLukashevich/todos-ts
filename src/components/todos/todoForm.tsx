@@ -5,7 +5,7 @@ interface IProps{
   createNewTodo: (todo: ITodo) => void;
 }
 
-export const TodoForm = ({createNewTodo}: IProps) => {
+const TodoForm = ({createNewTodo}: IProps) => {
   const [description, seDescription] = useState('')
   const [priority, setPriority] = useState('green')
   const createTodo = () => {
@@ -28,3 +28,5 @@ export const TodoForm = ({createNewTodo}: IProps) => {
     </>
   )
 }
+
+export default TodoForm;

@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { TodoForm } from "../components/todos/todoForm";
+
 import { ITodo } from "../types/todo";
 import { TodoListItem } from "../components/todos/TodoListItem";
+import TodoForm from "../components/todos/TodoForm";
 
 
 const styles = {
