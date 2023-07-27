@@ -1,5 +1,7 @@
 import { useState } from "react"
-import { ITodo } from "../../types/todo";
+import { ITodo } from "../../../types/todo";
+
+import './styles.css'
 
 interface IProps{
   createNewTodo: (todo: ITodo) => void;
@@ -11,13 +13,13 @@ const TodoForm = ({createNewTodo}: IProps) => {
   const createTodo = () => {
     createNewTodo({description, status: false, priority, created: new Date(), modified: new Date()});
     seDescription('')
-    setPriority('')
+    setPriority('green')
   }
 
   return(
     <>
       <form>
-        <input value={description} onChange={(e) => seDescription(e.target.value)}/>
+        <input className="description" value={description} onChange={(e) => seDescription(e.target.value)}/>
         <select onChange={(e) => setPriority(e.target.value)} defaultValue={priority}>
           <option value="green" style={{background: 'green'}}>Green</option>
           <option value="yellow" style={{background: 'yellow'}}>Yellow</option>

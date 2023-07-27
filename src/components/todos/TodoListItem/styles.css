@@ -1,0 +1,64 @@
+.item-wrapper {
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.checkbox-wrapper {
+  width: 10%;
+
+  input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  }
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.created-wrapper {
+  width: 20%;
+}
+
+.btn-close {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: hsla(4, 100%, 50%, 0.425);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 150ms;
+  
+  .icon-cross {
+    @include cross(40px, #fff, 6px);   
+  }
+  
+  &:hover,
+  &:focus {
+    transform: rotateZ(90deg);
+    background: hsl(216, 100, 40);
+  }
+
+}
