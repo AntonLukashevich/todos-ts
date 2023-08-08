@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledRequestPane = styled.div`
-  font-size: 20px;
-  background-color: yellow;
+  color: #9CA3AF;
+  background-color: #2F2C36;
   width:45%;
+  height: 100%;
 `
