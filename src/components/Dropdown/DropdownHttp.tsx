@@ -1,6 +1,9 @@
 import { useState } from "react";
-import { Button, DropdownMenu, Menu, MenuItem, MenuItemButton } from "./styled";
+import { DropdownMenu} from "./styled";
 import { httpMethods } from "../../consts/httpConst";
+import { Button } from "../Button/Button";
+import { Menu } from "../Menu/Menu";
+import { MenuItem, MenuItemButton } from "../Menu/styled";
 
 export const DropdownHttp = ({ onClickHandler, children, ...rest }: any) => {
   const [open, setOpen] = useState(false)
@@ -14,16 +17,16 @@ export const DropdownHttp = ({ onClickHandler, children, ...rest }: any) => {
 
   return (
     <DropdownMenu>
-      <Button onClick={handleOpen}>{value.label}&#9660;</Button>
+      <Button onClick={handleOpen} sx={{color: value.color}}>{value.label}&#9660;</Button>
       {open ? (
         <Menu>
           {
             httpDropdownOptions.map((item, index) => 
-            <MenuItem key={index}>
+            <MenuItem key={index} color={item.color}>
               <MenuItemButton onClick={() => {setValue(item);setOpen(false);}}>{item.label}</MenuItemButton>
             </MenuItem>)
           }
-          <MenuItem >
+          <MenuItem>
             <MenuItemButton onClick={() => { setOpen(false);}}>Custom Method</MenuItemButton>
           </MenuItem>
         </Menu>
