@@ -7,11 +7,20 @@ export const StyledEnvironmentPane = styled.div`
   width: 20%;
   border: 0.5px solid #cbc6c6;
   border-collapse: collapse;
-
-  @media only screen and (max-width: 1024px) {
-    background: red;
-  }
 `
+
+// export const StyledEnvironmentPane = styled.div`
+//   font-size: 14px;
+//   background-color: #2c2c2c;
+//   color: #fff;
+//   width: 20%;
+//   border: 0.5px solid #cbc6c6;
+//   border-collapse: collapse;
+
+//   @media only screen and (max-width: 1024px) {
+//     background: red;
+//   }
+//`
 
 export const StyledText = styled.div`
   font-size: 14px;

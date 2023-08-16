@@ -22,11 +22,21 @@ export const StyledListLinkSelected = styled.a<{isActive:boolean}>`
   border-left: 4px solid #ac9aff;
   border-left: ${({isActive}) => isActive ? "4px solid #ac9aff" : "none"};
   background-color: ${({isActive}) => isActive ? "#353535" : "none"};
-
-  &:hover {
-    background: #fff;
-  }
 `
+
+// export const StyledListLinkSelected = styled.a<{isActive:boolean}>`
+//   text-decoration: none;  
+//   display:flex;    
+//   margin: 5px 0 0 -40px;
+//   padding: 5px;
+//   border-left: 4px solid #ac9aff;
+//   border-left: ${({isActive}) => isActive ? "4px solid #ac9aff" : "none"};
+//   background-color: ${({isActive}) => isActive ? "#353535" : "none"};
+
+//   &:hover {
+//     background: #fff;
+//   }
+// `
 
 export const StyledListMethod = styled.p`
   color: #ac9aff;

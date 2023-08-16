@@ -36,8 +36,8 @@ const EnvironmentPane = () => {
                 </StyledLink>
                 <StyledLink href="#">
                     <StyledPlusIco src={process.env.PUBLIC_URL + '/img/plus_ico.png'} />
-                    <ArrowDown />
-                    {/* <StyledArrowPlusIco src={process.env.PUBLIC_URL + '/img/arrow_down_ico.png'} /> */}
+                    {/* <ArrowDown /> */}
+                    <StyledArrowPlusIco src={process.env.PUBLIC_URL + '/img/arrow_down_ico.png'} />
                 </StyledLink>
             </StyledBlock>
             <StyledBlock>

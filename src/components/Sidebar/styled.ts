@@ -8,13 +8,12 @@ export const StyledSidebar = styled.div`
   border: 0.5px solid #cbc6c6;
   border-collapse: collapse;
   text-align: center;
-  padding-top:1%
+  padding-top:1%;
 `
 
 export const StyledIco = styled.img`
-  width: 60%;
-  height: 20%;
-  
+  width: 40px;
+  height: 40px;  
 `
 
 export const StyledIcoLinks = styled.a`
