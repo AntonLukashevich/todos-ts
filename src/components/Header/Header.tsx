@@ -1,13 +1,6 @@
 import React from "react";
-
-import { StyledHeader } from "./styled";
-import { StyledBlock } from "./styled";
-import { StyledIco } from "./styled";
-import { StyledArrowIco } from "./styled";
-import { StyledText } from "./styled";
-import { StyledLinks } from "./styled";
-import { StyledProphile } from "./styled";
-import { StyledProphileIco } from "./styled";
+import { StyledHeader, StyledBlock, StyledIco, StyledArrowIco, StyledText, StyledLinks, StyledProphile,
+  StyledProphileIco } from "./styled";
 
 const Header = () => {
   return (

@@ -5,8 +5,7 @@ export const StyledHeader = styled.div`
   background-color: #2c2c2c;
   color: #fff;
   padding: 10px;
-  border_bottom: 0.5px solid #cbc6c6;
-  border-collapse: collapse;
+  border: none;
 `
 
 export const StyledBlock = styled.div`

@@ -1,9 +1,5 @@
 import React, {FC, useState} from 'react'
-
-import { StyledListText } from "./styled";
-import { StyledListPoint } from "./styled";
-import { StyledListMethod } from "./styled";
-import { StyledListLinkSelected } from "./styled";
+import { StyledListText, StyledListPoint, StyledListMethod, StyledListLinkSelected } from "./styled";
 
 const ListPoint:FC<{method: string, text: string, isFirst?: boolean}> = ({method, text, isFirst}) => {
     const [isActive, setIsActive] = useState(false);

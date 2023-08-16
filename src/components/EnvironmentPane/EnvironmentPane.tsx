@@ -1,18 +1,10 @@
 import React from "react";
 // @ts-ignore
 import {ReactComponent as ArrowDown} from "../../img/arrow-down.svg";
-
-import { StyledEnvironmentPane } from "./styled";
-import { StyledText } from "./styled";
-import { StyledLink } from "./styled";
-import { StyledArrowDownIco } from "./styled";
-import { StyledArrowPlusIco } from "./styled";
-import { StyledPlusIco } from "./styled";
-import { StyledFilterArrowIco } from "./styled";
-import { StyledInput } from "./styled";
-import { StyledBlock } from "./styled";
-import { StyledList } from "./styled";
 import ListPoint from "./ListPoint/ListPoint";
+import { StyledEnvironmentPane, StyledText, StyledLink, StyledArrowDownIco, StyledArrowPlusIco, StyledPlusIco,
+    StyledFilterArrowIco, StyledInput, StyledBlock, StyledList } from "./styled";
+
 
 
 const EnvironmentPane = () => {

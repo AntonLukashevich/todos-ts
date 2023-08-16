@@ -1,8 +1,5 @@
 import React from "react";
-
-import { StyledSidebar } from "./styled";
-import { StyledIco } from "./styled";
-import { StyledIcoLinks } from "./styled";
+import { StyledSidebar, StyledIco, StyledIcoLinks } from "./styled";
 
 const Sidebar = () => {
     return (
