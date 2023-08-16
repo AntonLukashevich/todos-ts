@@ -7,6 +7,10 @@ export const StyledEnvironmentPane = styled.div`
   width: 20%;
   border: 0.5px solid #cbc6c6;
   border-collapse: collapse;
+
+  @media only screen and (max-width: 1024px) {
+    background: red;
+  }
 `
 
 export const StyledText = styled.div`
@@ -66,39 +70,6 @@ export const StyledList = styled.ul`
   list-style: none;
 `
 
-export const StyledListPoint = styled.li`
-  font-size: 14px;
-  color: #fff;
-  width: 100%;
-  height: 100%;   
-`
 
-export const StyledListLink = styled.a`
-  text-decoration: none;  
-  display:flex;    
-  margin: 5px 0px 0 -35px;
-  padding: 5px;
-`
 
-export const StyledListLinkSelected = styled.a`
-  text-decoration: none;  
-  display:flex;    
-  margin: 5px 0px 0 -40px;
-  padding: 5px;
-  border-left: 4px solid #ac9aff;
-  background-color: #353535;
-`
 
-export const StyledListMethod = styled.p`
-  color: #ac9aff;
-  width: 25%;
-  height: 100%;
-  margin: 5px 5px 0 0;
-`
-
-export const StyledListText = styled.p`
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  margin: 5px 5px 0 0;
-`

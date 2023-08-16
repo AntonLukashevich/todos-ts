@@ -1,4 +1,6 @@
 import React from "react";
+// @ts-ignore
+import {ReactComponent as ArrowDown} from "../../img/arrow-down.svg";
 
 import { StyledEnvironmentPane } from "./styled";
 import { StyledText } from "./styled";
@@ -10,11 +12,8 @@ import { StyledFilterArrowIco } from "./styled";
 import { StyledInput } from "./styled";
 import { StyledBlock } from "./styled";
 import { StyledList } from "./styled";
-import { StyledListText } from "./styled";
-import { StyledListPoint } from "./styled";
-import { StyledListMethod } from "./styled";
-import { StyledListLink } from "./styled";
-import { StyledListLinkSelected } from "./styled";
+import ListPoint from "./ListPoint/ListPoint";
+
 
 const EnvironmentPane = () => {
     return (
@@ -37,23 +36,14 @@ const EnvironmentPane = () => {
                 </StyledLink>
                 <StyledLink href="#">
                     <StyledPlusIco src={process.env.PUBLIC_URL + '/img/plus_ico.png'} />
-                    <StyledArrowPlusIco src={process.env.PUBLIC_URL + '/img/arrow_down_ico.png'} />
+                    <ArrowDown />
+                    {/* <StyledArrowPlusIco src={process.env.PUBLIC_URL + '/img/arrow_down_ico.png'} /> */}
                 </StyledLink>
             </StyledBlock>
             <StyledBlock>
                 <StyledList>
-                    <StyledListPoint>
-                        <StyledListLinkSelected  href="#">
-                            <StyledListMethod>GET</StyledListMethod>
-                            <StyledListText>New project</StyledListText>
-                        </StyledListLinkSelected>
-                    </StyledListPoint>
-                    <StyledListPoint>
-                        <StyledListLink href="#" onClick={function(){}}>
-                            <StyledListMethod>POST</StyledListMethod>
-                            <StyledListText>First Test</StyledListText>
-                        </StyledListLink>
-                    </StyledListPoint>
+                    <ListPoint method="GET" text="New project" isFirst/>   
+                    <ListPoint method="POST" text="First Test"/>                
                 </StyledList>
             </StyledBlock>
         </StyledEnvironmentPane>
